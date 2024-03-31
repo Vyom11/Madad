@@ -15,7 +15,7 @@ const CheckOutSucess = () => {
   const  email = user?.email;
 
   useEffect(() => {
-    axios.delete(`http://localhost:6001/CartReset/${email}`)
+    axios.delete(`https://madad-ni03.onrender.com/CartReset/${email}`)
 
     const fetchOrderData = async () => {
       try {
@@ -28,7 +28,7 @@ const CheckOutSucess = () => {
         }
 
         // Fetching order data from Stripe
-        const response = await axios.get(`http://localhost:6001/SuccessfulPayment/api/stripe/order?session_id=${sessionId}`); // Replace '/api/stripe/order' with your backend endpoint for fetching order data
+        const response = await axios.get(`https://madad-ni03.onrender.com/SuccessfulPayment/api/stripe/order?session_id=${sessionId}`); // Replace '/api/stripe/order' with your backend endpoint for fetching order data
         setOrderData(response.data);
         setIsLoading(false);
       } catch (error) {

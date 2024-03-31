@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const axiosPublic =  axios.create({
-    baseURL: 'http://localhost:6001',
+    baseURL: 'https://madad-ni03.onrender.com',
   })
 
 const useAxiosPublic = () => {

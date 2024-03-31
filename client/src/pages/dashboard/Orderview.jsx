@@ -12,7 +12,7 @@ const Orderview = () => {
     const urlParams = new URLSearchParams(window.location.search);
     const sessionId = urlParams.get('orderId');
 
-    axiosSecure.get(`http://localhost:6001/orders/${sessionId}`)
+    axiosSecure.get(`https://madad-ni03.onrender.com/orders/${sessionId}`)
       .then(response => {
         // Check if response status is within the success range (200-299)
         if (response.status >= 200 && response.status < 300) {

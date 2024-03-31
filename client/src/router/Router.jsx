@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         {
           path: "/orders/",
           element: <Orderview/>,
-          loader: ({params}) => fetch(`http://localhost:6001/orders/?orderId=${params.id}`)
+          loader: ({params}) => fetch(`https://madad-ni03.onrender.com/orders/?orderId=${params.id}`)
         }, 
         
       ]
@@ -92,13 +92,13 @@ const router = createBrowserRouter([
         {
           path: "orders/",
           element: <Vieworder/>,
-          loader: ({params}) => fetch(`http://localhost:6001/orders/?orderId=${params.id}`)
+          loader: ({params}) => fetch(`https://madad-ni03.onrender.com/orders/?orderId=${params.id}`)
         }, 
         {
          
           path: "update-menu/:id",
           element: <UpdateMenu/>,
-          loader: ({params}) => fetch(`http://localhost:6001/menu/${params.id}`)
+          loader: ({params}) => fetch(`https://madad-ni03.onrender.com/menu/${params.id}`)
         }
       ]
     }

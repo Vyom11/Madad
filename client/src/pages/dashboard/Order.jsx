@@ -28,7 +28,7 @@ const Order = () => {
 
     
 
-    axiosSecure.get(`http://localhost:6001/getorders/${email}`,)
+    axiosSecure.get(`https://madad-ni03.onrender.com/getorders/${email}`,)
       .then(response => {
         // Check if response status is within the success range (200-299)
         if (response.status >= 200 && response.status < 300) {
